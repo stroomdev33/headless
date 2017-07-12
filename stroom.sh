@@ -10,10 +10,10 @@ WORKING_DIR=/tmp/headless-stroom-${ID}
 THIS_DIR=`pwd`
 rm -rf ${WORKING_DIR}
 mkdir ${WORKING_DIR}
-ACCOUNTING_WAR=accounting.war
-unzip -j -o $ACCOUNTING_WAR *.jar -d ${WORKING_DIR}
+STROOM_WAR=stroom.war
+unzip -j -o $STROOM_WAR *.jar -d ${WORKING_DIR}
 mkdir ${THIS_DIR}/xsd
-unzip -j -o $ACCOUNTING_WAR *.xsd -d ${THIS_DIR}/xsd
+unzip -j -o $STROOM_WAR *.xsd -d ${THIS_DIR}/xsd
 #CLASSPATH=${WORKING_DIR}:${THIS_DIR}/lib/tools.jar:
 set -vx
 
